@@ -89,3 +89,7 @@ inp = {
 out = session.run(None, inp)
 print(out)
 ```
+
+## Web Application
+
+![alt text](image.png)
