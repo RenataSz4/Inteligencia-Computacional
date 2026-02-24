@@ -89,17 +89,3 @@ inp = {
 out = session.run(None, inp)
 print(out)
 ```
-
-## Validation
-
-- The frontend performs basic client-side validation: required fields and sensible numeric ranges.
-- The API validates input shape using the JSON schema in `api/schemas.js`.
-
-## Notes and next steps
-
-- If the model returns the same class for most inputs, inspect `model/model.ipynb` for class balance and evaluation metrics (use `classification_report` and `confusion_matrix`). Consider retraining with `class_weight='balanced'` or resampling the training data.
-- You can customize the UI text and behavior in `web/index.html` and `web/app.js`.
-
----
-
-If you want, I can also add a `package.json` with `start` scripts and a `requirements.txt` for the Python dependencies. Would you like that?
